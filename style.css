@@ -985,3 +985,11 @@ header {
         padding-right: 20px;
     }
 }
+.logo {
+    color: #111827;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #2563EB;
+}
