@@ -830,3 +830,99 @@ nav a:hover {
         padding: 25px 20px;
     }
 }
+/* =========================
+   Fixed Header
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    background: rgba(17, 17, 17, 0.90);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #222222;
+}
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+/* =========================
+   Mobile Navigation
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        width: 100%;
+        padding: 18px 20px;
+
+        left: 0;
+        transform: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+
+        gap: 0;
+
+        background: #111111;
+
+        border-top: 1px solid #292929;
+        border-bottom: 1px solid #292929;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 18px 20px;
+
+        border-bottom: 1px solid #222222;
+
+        font-size: 15px;
+
+        color: #bbbbbb;
+    }
+
+    nav a:hover {
+        color: white;
+        background: #181818;
+    }
+}
