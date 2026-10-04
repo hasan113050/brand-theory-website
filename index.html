@@ -14,13 +14,17 @@
     <header>
     <div class="logo">BRAND THEORY</div>
 
-    <nav>
+    <nav id="nav-menu">
         <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Work</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact-form">Contact</a>
     </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+    </button>
 </header>
 
 
@@ -47,7 +51,7 @@
         </div>
 
     </section>
-    <section class="services">
+    <section class="services" id="services"></section>
 
     <p class="small-text">WHAT WE DO</p>
 
@@ -95,7 +99,7 @@
 
 </section>
 
-<section class="why-us">
+<section class="why-us" id="about">
 
     <div class="why-content">
 
@@ -159,7 +163,7 @@
 
 </section>
 
-<section class="case-studies">
+<section class="case-studies" id="work">
 
     <p class="small-text">SELECTED WORK</p>
 
@@ -226,7 +230,7 @@
 
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
 
     <p class="small-text">LET'S WORK TOGETHER</p>
 
@@ -354,7 +358,7 @@
 </section>
 
 </main>
-
+<script src="script.js"></script>
 </body>
 
 </html>
