@@ -975,3 +975,13 @@ header {
 header {
     background: #EEF4FF !important;
 }
+header {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media (max-width: 768px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
