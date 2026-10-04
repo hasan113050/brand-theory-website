@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #111111;
-    color: white;
+    background: #F7F8FA;
+    color: #111827;
     overflow-x: hidden;
 }
 
@@ -34,6 +34,7 @@ header {
 .logo {
     font-size: 20px;
     font-weight: bold;
+    color: #111827;
 }
 
 nav {
@@ -42,13 +43,14 @@ nav {
 }
 
 nav a {
-    color: #aaaaaa;
+    color: #667085;
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: white;
+    color: #2563EB;
 }
 
 
@@ -68,8 +70,7 @@ nav a:hover {
 .small-text {
     font-size: 13px;
     letter-spacing: 3px;
-    color: #888888;
-
+    color: #2563EB;
     margin-bottom: 30px;
 }
 
@@ -82,14 +83,14 @@ nav a:hover {
 }
 
 .hero h1 span {
-    color: #7c5cff;
+    color: #2563EB;
 }
 
 .description {
     max-width: 600px;
     margin: 0 auto 40px;
 
-    color: #999999;
+    color: #667085;
 
     font-size: 18px;
     line-height: 1.7;
@@ -117,13 +118,25 @@ nav a:hover {
 }
 
 .primary-btn {
-    background: white;
-    color: black;
+    background: #2563EB;
+    color: white;
+    border: 1px solid #2563EB;
+}
+
+.primary-btn:hover {
+    background: #1D4ED8;
 }
 
 .secondary-btn {
-    border: 1px solid #444444;
-    color: white;
+    border: 1px solid #D0D5DD;
+    color: #111827;
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: #EFF6FF;
+    border-color: #2563EB;
+    color: #2563EB;
 }
 
 
@@ -151,20 +164,23 @@ nav a:hover {
 }
 
 .service-card {
-    border: 1px solid #292929;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
     padding: 40px;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .service-card:hover {
-    border-color: #555555;
+    border-color: #2563EB;
     transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.08);
 }
 
 .service-card span {
-    color: #777777;
+    color: #2563EB;
     font-size: 13px;
+    font-weight: 600;
 }
 
 .service-card h3 {
@@ -173,9 +189,18 @@ nav a:hover {
 }
 
 .service-card p {
-    color: #888888;
+    color: #667085;
     line-height: 1.7;
     font-size: 16px;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -203,7 +228,7 @@ nav a:hover {
 }
 
 .why-description {
-    color: #888888;
+    color: #667085;
 
     font-size: 18px;
     line-height: 1.7;
@@ -225,11 +250,11 @@ nav a:hover {
 
     padding: 30px 0;
 
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid #E5E7EB;
 }
 
 .point > span {
-    color: #777777;
+    color: #98A2B3;
     font-size: 13px;
 }
 
@@ -239,7 +264,7 @@ nav a:hover {
 }
 
 .point p {
-    color: #888888;
+    color: #667085;
     line-height: 1.6;
 }
 
@@ -270,7 +295,7 @@ nav a:hover {
 .case-header p {
     max-width: 400px;
 
-    color: #888888;
+    color: #667085;
     line-height: 1.7;
 }
 
@@ -281,7 +306,8 @@ nav a:hover {
 }
 
 .case-card {
-    border: 1px solid #292929;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
     border-radius: 15px;
 
     overflow: hidden;
@@ -291,7 +317,8 @@ nav a:hover {
 
 .case-card:hover {
     transform: translateY(-5px);
-    border-color: #555555;
+    border-color: #2563EB;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.08);
 }
 
 .case-image {
@@ -301,12 +328,19 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-    background: #1a1a1a;
+    background: #EFF6FF;
 
-    color: #555555;
+    color: #667085;
 
     font-size: 13px;
     letter-spacing: 3px;
+}
+
+.case-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .case-info {
@@ -314,7 +348,7 @@ nav a:hover {
 }
 
 .case-info > span {
-    color: #777777;
+    color: #2563EB;
     font-size: 12px;
     letter-spacing: 2px;
 }
@@ -325,14 +359,14 @@ nav a:hover {
 }
 
 .case-info p {
-    color: #888888;
+    color: #667085;
     line-height: 1.7;
 
     margin-bottom: 25px;
 }
 
 .case-info a {
-    color: white;
+    color: #2563EB;
     text-decoration: none;
     font-size: 14px;
 }
@@ -365,7 +399,7 @@ nav a:hover {
 
     margin: 0 auto 40px;
 
-    color: #888888;
+    color: #667085;
 
     font-size: 18px;
     line-height: 1.7;
@@ -402,15 +436,14 @@ nav a:hover {
 /* Start a Project */
 
 .contact-buttons .primary-btn {
-    background: white;
-    color: #111111;
+    background: #2563EB;
+    color: white;
 
-    border: 1px solid white;
+    border: 1px solid #2563EB;
 }
 
 .contact-buttons .primary-btn:hover {
-    background: transparent;
-    color: white;
+    background: #1D4ED8;
 
     transform: translateY(-3px);
 }
@@ -419,15 +452,16 @@ nav a:hover {
 /* WhatsApp */
 
 .contact-buttons .secondary-btn {
-    background: green;
-    color: white;
+    background: #FFFFFF;
+    color: #111827;
 
-    border: 1px solid #444444;
+    border: 1px solid #D0D5DD;
 }
 
 .contact-buttons .secondary-btn:hover {
-    background: #1d1d1d;
-    border-color: #666666;
+    background: #25D366;
+    border-color: #25D366;
+    color: white;
 
     transform: translateY(-3px);
 }
@@ -454,7 +488,7 @@ nav a:hover {
 .form-intro {
     max-width: 600px;
 
-    color: #888888;
+    color: #667085;
 
     font-size: 17px;
     line-height: 1.7;
@@ -479,7 +513,7 @@ nav a:hover {
     margin-bottom: 10px;
 
     font-size: 14px;
-    color: #bbbbbb;
+    color: #475467;
 }
 
 .form-group input,
@@ -489,13 +523,13 @@ nav a:hover {
 
     padding: 17px 18px;
 
-    background: #171717;
+    background: #FFFFFF;
 
-    border: 1px solid #2d2d2d;
+    border: 1px solid #D0D5DD;
 
     border-radius: 8px;
 
-    color: white;
+    color: #111827;
 
     font-family: inherit;
 
@@ -509,7 +543,8 @@ nav a:hover {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #666666;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
 }
 
 .form-group textarea {
@@ -529,9 +564,9 @@ nav a:hover {
 
     border-radius: 50px;
 
-    background: white;
+    background: #2563EB;
 
-    color: #111111;
+    color: white;
 
     font-size: 15px;
 
@@ -543,9 +578,50 @@ nav a:hover {
 }
 
 .contact-form-section button:hover {
-    background: #dddddd;
+    background: #1D4ED8;
 
     transform: translateY(-2px);
+}
+
+
+/* =========================
+   Fixed Header
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    background: rgba(247, 248, 250, 0.90);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #E5E7EB;
+}
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
 }
 
 
@@ -558,16 +634,63 @@ nav a:hover {
     /* Navigation */
 
     header {
-        width: 90%;
-        padding: 22px 0;
+        width: 100%;
+        padding: 18px 20px;
+
+        left: 0;
+        transform: none;
     }
 
     .logo {
         font-size: 18px;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
         display: none;
+        flex-direction: column;
+
+        gap: 0;
+
+        background: #FFFFFF;
+
+        border-top: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB;
+
+        box-shadow: 0 10px 25px rgba(17, 24, 39, 0.08);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 18px 20px;
+
+        border-bottom: 1px solid #E5E7EB;
+
+        font-size: 15px;
+
+        color: #667085;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        color: #2563EB;
+        background: #EFF6FF;
     }
 
 
@@ -616,21 +739,40 @@ nav a:hover {
     .services {
         width: 100%;
         padding: 80px 20px;
+        text-align: left;
+    }
+
+    .services .small-text {
+        text-align: left;
     }
 
     .services h2 {
         font-size: 38px;
         line-height: 1.1;
         margin-bottom: 40px;
+
+        width: 100%;
+        max-width: 700px;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        text-align: left;
     }
 
     .service-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+
+        width: 100%;
     }
 
     .service-card {
         padding: 30px 25px;
+    }
+
+    .service-card img {
+        height: 190px;
     }
 
     .service-card h3 {
@@ -830,99 +972,6 @@ nav a:hover {
         padding: 25px 20px;
     }
 }
-/* =========================
-   Fixed Header
-========================= */
-
 header {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    z-index: 1000;
-
-    background: rgba(17, 17, 17, 0.90);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid #222222;
-}
-
-
-/* =========================
-   Mobile Menu Button
-========================= */
-
-.menu-toggle {
-    display: none;
-
-    background: none;
-    border: none;
-
-    color: white;
-
-    font-size: 28px;
-
-    cursor: pointer;
-
-    padding: 5px;
-}
-
-
-/* =========================
-   Mobile Navigation
-========================= */
-
-@media (max-width: 768px) {
-
-    header {
-        width: 100%;
-        padding: 18px 20px;
-
-        left: 0;
-        transform: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        display: none;
-        flex-direction: column;
-
-        gap: 0;
-
-        background: #111111;
-
-        border-top: 1px solid #292929;
-        border-bottom: 1px solid #292929;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        padding: 18px 20px;
-
-        border-bottom: 1px solid #222222;
-
-        font-size: 15px;
-
-        color: #bbbbbb;
-    }
-
-    nav a:hover {
-        color: white;
-        background: #181818;
-    }
+    background: #EEF4FF !important;
 }
