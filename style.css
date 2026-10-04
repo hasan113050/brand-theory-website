@@ -993,3 +993,6 @@ header {
 .logo span {
     color: #2563EB;
 }
+html {
+    scroll-behavior: smooth;
+}
